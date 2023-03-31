@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+        dataLayer.push(arguments);
+        }
+        gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 500,
+        });
+        gtag('set', 'ads_data_redaction', true);
+    </script>
+    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js" data-culture="FI" type="text/javascript" ></script>
+    <!-- Google Tag Manager -->
+   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M7ZZZVV'); </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"  href="#">
+    <title>Fazer Realisti</title>
+    <link rel="icon" href="./Images/fazer_logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="main">
+
+    <canvas id="canvs"></canvas>
+    <section id="sec1" class="section1">
+    <!-- <canvas id="canvs"></canvas> -->
+    <div class="cont">
+        <div class="logo">
+            <img src="./Images/fazer_logo.png" alt="">
+        </div>
+        <div class="headline">
+            <h1 id="headlinetxt" class="headlinetxt">Ole Realisti.</h1>
+        </div>
+        <div class="headTxt">
+            <p id="htxt" class="htxt">Ympäristömme tuputtaa normeja ja odotuksia siitä, miten olet tarpeeksi reipas ja taitava. Someen tuutataan kiiltokuvaa. Samaan aikaan sisin haluaa repiä palasiksi jokaisen, joka neuvoo, kuinka voisit olla parempi äiti, pärjätä vieläkin paremmin töissä tai miten sijoitusomaisuuttaan voi kartuttaa. Kuulostaako tutulta? Ota leivän mittainen tauko ja päästä irti turhista odotuksista ja paineista.</p>
+        </div>
+    </div>
+
+</section>
+<section id="section2" class="section2">
+    
+    <div id="container">
+        <button id='btn2' class="btn2"><a href="./index.html"  rel="noopener noreferrer" >ALOITA ALUSTA <svg id="btn2SVG" width="10" height="11" viewBox="0 0 6 7" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 1.21077L2.92828 3.50095L0.5 5.78923L1.78485 7L5.5 3.50095L1.78485 0L0.5 1.21077Z" fill="#15256B"/>
+            </svg></a></button>
+    <form action="" method="post">
+        <textarea onkeyup="textAreaAdjust(this)" id="lname" placeholder="Mitä odotuksia ja paineita sinä olet kohdannut? Kirjoita ne tähän ja päästä niistä irti." maxlength="1000" required = "required"></textarea>
+        <button type="submit" class= "btn" id="show_img_btn">OLE REALISTI <svg id="btnSVG" width="10" height="11" viewBox="0 0 6 7" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 1.21077L2.92828 3.50095L0.5 5.78923L1.78485 7L5.5 3.50095L1.78485 0L0.5 1.21077Z" fill="#15256B"/>
+            </svg></button>
+        <div id="show_img_here"></div>
+    <!-- <div class="video">
+        <video id="vid" src="fire-spread-alpha_test2.mp4"></video>
+    </div> -->
+        <div id="fire" >
+            <div class="preload">
+                <img src="./Images/fire_spritesheet_v1.png" />
+            </div>
+            
+        </div>
+    </div>
+</section>
+    <div id="wraper">
+            <div id="openiontxt" class="txt2">
+                <p id="openions">
+                    Jakamaasi tekstiä voidaan käyttää osana Fazer Real –leivän mainontaa. Ethän siis jaa sellaista tietoa, josta sinut tai muut voidaan tunnistaa ja jaathan vain itse luomaasi tekstiä, johon sinulla on kaikki oikeudet.
+                </p>
+            </div>
+            <section id="section3" class="section3">
+                <div id="imgcontainer1" class="imgcontainer">
+                    <div class="rellax" data-rellax-speed="1">
+                        <img id="img1" src="./Images/pipsa_desktop.jpg"  alt="" >
+                    </div>
+                    
+                    <div id="txt1" class="txt1 " >
+                        <p id="txt1p" >Pipsa Hurmerinta: ”Ruuan ei tarvitse olla suoritus, nautinto kyllä!”</p>
+                        <div>
+                            <a id="txt1a" href="https://www.instagram.com/p/CZwAeLutfIt/" target="_blank" rel="noopener noreferrer">LUE LISÄÄ</a>
+                            <svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 1.21077L2.92828 3.50095L0.5 5.78923L1.78485 7L5.5 3.50095L1.78485 0L0.5 1.21077Z" fill="#15256B"/>
+                                </svg>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section id="section4" class="section4">  
+                
+                <div id="imgcontainer2" class="imgcontainer2">
+                    <div class="rellax" data-rellax-speed="1">
+                        <img id="img2" src="./Images/flower_wide.webp" alt="">
+                    </div>
+                    
+                    <div id="txt3" class="txt3" >
+                        <h3>Syö itsellesi hyvää.</h3>
+                        <p>Maista uusi Fazer Real Täysjyväpala 100% Kaura.</p>
+                        <div>
+                            <a id="txt3a" href="https://www.fazer.fi/tuotteet-ja-asiakaspalvelu/tuotemerkit/real/?utm_source=campaignsite&utm_medium=organic&utm_campaign=fb_fi_fazer_real_t1_2022&utm_content=additional_link" target="_blank" rel="noopener noreferrer">LUE LISÄÄ</a>
+                            <svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 1.21077L2.92828 3.50095L0.5 5.78923L1.78485 7L5.5 3.50095L1.78485 0L0.5 1.21077Z" fill="#15256B"/>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section5" class="section5">  
+                
+                <div id="imgcontainer3" class="imgcontainer3">
+                    <div class="rellax" data-rellax-speed="1">
+                        <img id="img3" src="./Images/myfazer_desktop.png" alt="">
+                    </div>
+                    
+                    <div id="txt5" class="txt5" >
+                        <h3>Liity MyFazeriin!</h3>
+                        <p>Rekisteröitymällä saat 20% etukoodin Fazerin verkkokauppaan.</p>
+                        <div>
+                            <a id="txt5a" href="https://fazer.fi/myfazer/?utm_source=campaignsite&utm_medium=organic&utm_campaign=fb_fi_fazer_real_t1_2022&utm_content=additional_link" target="_blank" rel="noopener noreferrer">LIITY NYT</a>
+                            <svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 1.21077L2.92828 3.50095L0.5 5.78923L1.78485 7L5.5 3.50095L1.78485 0L0.5 1.21077Z" fill="#15256B"/>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+</div>
+    <footer id="footer" class="footer">
+        <div class="footertxt">
+            <p>© Oy Karl Fazer Ab. Kaikki oikeudet pidätetään. <u><a id="footerlink" href="https://www.fazergroup.com/fi/kayttoehdot/?utm_source=campaignsite&utm_medium=organic&utm_campaign=fb_fi_fazer_real_t1_2022&utm_content=additional_link" target="_blank" rel="noopener noreferrer">Käyttöehdot</a></u></p>
+        </div>
+    </footer>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/delaunay.js"></script>
+<script src="./js/TweenMax.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
+<script type="module" src="./index.js"></script>
+<script type="text/javascript" src="./js/rellax.min.js"></script>
+  <script>
+      var rellax = new Rellax('.rellax');
+      $(window).on("load resize", imageChange);
+       $(window).on("load resize", resizeWindow);
+            function imageChange() {
+                if (screen.width < 660){
+                    // $('#img1').attr('src', './pipsa_mobile.jpg' );
+                    // $('#img2').attr('src', './myfazer_mobile.png' );
+                    document.getElementById("img1").src = "./Images/pipsa_mobile.jpg"
+                    document.getElementById("img2").src = "./Images/flower.webp"
+                    document.getElementById("img3").src = "./Images/myfazer_mobile.png"
+            } else{
+                document.getElementById("img1").src = "./Images/pipsa_desktop.jpg"
+                    document.getElementById("img2").src = "./Images/flower_wide.webp"
+                    document.getElementById("img3").src = "./Images/myfazer_desktop.png"
+            }
+        };
+        var wrapperOrignalHight = $('#wraper').height() - 60
+        function resizeWindow(){
+            var openiontxtHeight = $('#openiontxt').height()
+                    var warperHeight = $('#wraper').height() 
+                    console.log(warperHeight)
+                    console.log(`${openiontxtHeight}px`)
+         if ((warperHeight < openiontxtHeight) && (openiontxtHeight > wrapperOrignalHight)){
+            document.getElementById("wraper").style.height  = `${openiontxtHeight}px` 
+         }else  if ((warperHeight > openiontxtHeight) && (openiontxtHeight < wrapperOrignalHight) ){
+            document.getElementById("wraper").style.height  = `auto`
+         }else  if ((warperHeight > openiontxtHeight) ){
+            document.getElementById("wraper").style.height  = `${openiontxtHeight}px`
+         }
+        }
+
+    function textAreaAdjust(element) {
+        var count = element.value.length;
+        var text = $('#lname').val()
+        var numBreaks = (text.match(/\n/g)||[]).length;
+        var charcount = text.length + numBreaks
+    console.log(numBreaks)
+        if (count > 100  || numBreaks > 3) {
+            element.style.height = "0.2px";
+        element.style.height = (6+element.scrollHeight)+"px";
+        document.getElementById("section2").style.height = "10px"
+        document.getElementById("section2").style.height = (24+element.scrollHeight)+"px";
+        document.getElementById("show_img_btn").style.top = "10px"
+        document.getElementById("show_img_btn").style.top = (element.scrollHeight-25)+"px";
+} else if ( screen.width > 660 ){
+    element.style.height = "95px"
+    document.getElementById("section2").style.height = "160px"
+    document.getElementById("show_img_btn").style.top = "130px"
+} else{
+    element.style.height = "81px"
+    document.getElementById("section2").style.height = "160px"
+    document.getElementById("show_img_btn").style.top = "97px"
+}
+        }
+        
+  </script>
+  </script>
+</body>
+</html>
+

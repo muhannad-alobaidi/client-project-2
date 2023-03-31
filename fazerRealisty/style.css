@@ -1,0 +1,663 @@
+
+@font-face {
+  font-family: 'Fazer-headline';
+  src: url("./fonts/FazerHeadline-Regular.woff") format("woff");
+  font-weight: normal;  
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Fazer-text-light';
+  src: url("./fonts/FazerText-Light.woff") format("woff");
+  font-weight: normal;  
+  font-style: normal; 
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  font-family: 'Fazer-text-light';
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+#main{
+  display: block;
+  position: relative;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*___________________________________*/
+
+html, body { 
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+ }
+
+body {
+    background-image: url(./Images/bg.webp);
+    background-color:#b4d9df;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    min-width: 345px;
+    max-width: 870px ;
+}
+.btn{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 18px 20px;
+font-size: 20px;
+line-height: 24px;
+color: rgb(251, 253, 253);
+border-style: none;
+position: absolute;
+width: 194px;
+height: 60px;
+left: 141px;
+top: 130px;
+font-size: 20px;
+font-family: 'Fazer-headline' ;
+letter-spacing: -0.02em;
+background: #15256B;
+cursor: pointer;
+}
+.btn2{
+opacity: 0;
+display: none;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 18px 10px;
+color: rgb(251, 253, 253);
+border-style: none;
+position: absolute;
+width: 194px;
+height: 60px;
+left: 141px;
+bottom: 40px;
+font-family: 'Fazer-headline' ;
+background: #15256B;
+cursor: pointer;
+}
+.btn2 a{
+font-size: 20px;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-decoration: none;
+color: white;
+font-family: 'Fazer-headline' ;
+
+}
+
+
+#lname {
+  height: 95px;
+  width: 445px;
+  font-size: 15px;
+  line-height: 20px;    
+}
+textarea{
+  border: none;
+  padding: 20px 20px 20px 20px;
+  padding-top: 40px;
+  resize: none;
+  outline: none;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #15256B;
+  font-size: 15px;
+  font-family: 'Fazer-text-light' ;
+
+}
+textarea::placeholder { 
+  color: #15256B;
+  text-align: center;
+  font-size: 16px;
+  padding: 11px 30px 10px 30px;
+  line-height: 20px;
+  font-family: 'Fazer-text-light';
+}
+
+textarea::-moz-placeholder {
+  color: #15256B;
+  text-align: center;
+  font-size: 16px;
+  padding: 11px 30px 10px 30px;
+  line-height: 20px;
+  font-family: 'Fazer-text-light';
+  opacity: 1;
+}
+
+textarea::-webkit-input-placeholder {
+color: #15256B;
+text-align: center;
+font-size: 16px;
+padding: 11px 30px 10px 30px;
+line-height: 20px;
+font-family: 'Fazer-text-light';
+}
+
+textarea:focus::placeholder{
+  color: transparent;
+}
+
+
+#show_img_here{
+position: absolute;
+text-align: center;
+left: 25%;
+}
+
+#openiontxt{
+padding: 56px 8% 30px 8%;
+}
+@media screen and (max-width: 870px){
+    body{
+        width: 100%;
+        padding: 0;
+       
+    }
+    .section3{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+
+    }
+    .section4{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .section5{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+}
+
+@media  screen and (max-width: 660px){
+  #img1{
+    content: url("./Images/pipsa_mobile.jpg") ;
+    width: 242px;
+    height: 327px;
+  }
+  #img2{
+    content: url("./Images/flower.webp") ;
+    width: 242px;
+    height: 327px;
+
+  }
+  #img3{
+    content: url("./Images/myfazer_mobile.png") ;
+    width: 242px;
+    height: 327px;
+
+  }
+  #txt1{
+    left : 150px;
+    top: 0 ;
+    
+  }
+  .txt2 p{
+    padding: 10px 15px 30px 15px !important;
+  }
+  #txt3{
+    right: 150px;
+    top: -30px ;
+  }
+  #lname{
+    width: 275px !important;
+    height: 81px ;
+  }
+  #container {
+
+    width: 315px !important;
+  }
+  .btn {
+    left: 60.5px !important;
+    top: 97px;
+  }
+  .btn2{
+    left: 60.5px !important;
+  }
+  .txt1mobile{
+    right: 150px !important;
+  }
+  .txt5mobile{
+    right: 150px !important;
+  }
+  .txt3mobile{
+    left: 150px !important;
+  }
+  .htxt{
+    padding: 20px 10% 20px 10% !important;
+    font-size: 15px !important;
+    line-height: 120% !important;
+    
+}
+#openiontxt{
+  padding: 50px 8% 50px 8% !important;
+}
+textarea{
+  padding-top: 20px !important;
+}
+textarea::placeholder { 
+  padding: 11px 10px 10px 10px !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+}
+
+}
+
+#wraper{
+  padding-bottom: 40px;
+}
+
+.section1{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    }
+
+.logo img {
+  height: auto;
+  width: 70px;
+}
+.cont{
+
+    text-align: center;
+    padding-top: 50px;
+}
+.headlinetxt{
+    font-size: 70px;
+    font-family: 'Fazer-headline' !important;
+    line-height: 85px;
+    margin: 20px 10px 20px 10px;
+    color: #15256B;
+}
+
+.logo {
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+.htxt{
+    padding: 20px 17% 20px 17%;
+    color: #15256B;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.section2 {
+  display: inline-block;
+  width: 100%;
+    height: 160px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+.section3{
+  padding: 30px;
+}
+.section4{
+  padding: 30px;
+}
+.section5{
+  padding: 30px;
+}
+
+canvas {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    /* background-color: white; */
+}
+
+#canvs{
+  left: 0;
+  top: 0;
+ height: 1500px;
+  width: 100%;
+  
+
+}
+
+/* text under the text area */
+.txt2{
+  text-align: center;
+}
+
+.txt2 p {
+  font-size: 10px;
+  line-height: 12px;
+  color: #1E717B ;
+  padding: 10px 40px 30px 40px;
+  
+}
+
+#container {
+    position: absolute;
+    width: 485px;
+    height: 121px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(159, 220, 175, 0.018);
+}
+
+canvas{
+    border-style: none;
+  }
+
+/* pipsa img ---------------------------------------- */
+
+.imgcontainer{
+    position: relative;
+    text-align: start;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.imgcontainer img{
+  cursor: default  ;
+  box-shadow: 0px 20px 20px rgba(30, 113, 123, 0.15);
+  width: 541px;
+  height: 452px;
+  object-fit: cover;
+}
+/* bread img ------------------------------------------ */
+.imgcontainer2{
+    position: relative;
+    text-align: end;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.imgcontainer2 img{
+    right: 0;
+    cursor: default;
+    box-shadow: 0px 20px 20px rgba(30, 113, 123, 0.15);
+    width: 541px;
+    height: 452px;
+    object-fit: cover;
+}
+
+/* my fazer img --------------------------------------- */
+.imgcontainer3{
+  position: relative;
+  text-align: start;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.imgcontainer3 img{
+cursor: default  ;
+box-shadow: 0px 20px 20px rgba(30, 113, 123, 0.15);
+width: 541px;
+height: 452px;
+object-fit: cover;
+}
+/* pipsa text box --------------------------------------- */
+.txt1{
+    height: 203px;
+    width: 194px ;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25px;
+    left: 466px;
+    text-align: center;
+    box-shadow: 0px 20px 20px rgba(30, 113, 123, 0.15);
+  }
+  .txt1 p{
+    font-size: 26px;
+    line-height: 27.3px;
+    color: #15256B;
+    padding-top: 31px;
+    padding-right: 21px;
+    padding-left: 21px;
+    padding-bottom: 17px;
+    font-family: 'Fazer-headline';
+    letter-spacing: -0.02em;
+  }
+  .txt1 a{
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 105%;
+    color: #15256B;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Fazer-headline';
+  }
+
+/* my fazer text box --------------------------------------- */
+.txt5{
+  height: 191px;
+  width: 194px ;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: -30px;
+    left: 466px;
+    text-align: center;
+    box-shadow: 0px 20px 20px rgba(30, 113, 123, 0.15);
+  }
+  .txt5 h3{
+    font-size: 26px;
+    line-height: 27.5px;
+    color: #15256B;
+    padding: 41px 21px 10px 21px;
+    font-family: 'Fazer-headline';
+    letter-spacing: -0.02em;
+    
+  }
+  .txt5 p{
+    font-size: 13px;
+    line-height: 120%;
+    color: #000000;
+    padding: 5px 21px 13px 21px;
+    font-family: 'Fazer-text-light';
+    letter-spacing: -0.02em;
+
+    
+  }
+  .txt5 a{
+    font-size: 16px;
+    line-height: 105%;
+    color: #15256B;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Fazer-headline';
+    
+  }
+  
+/* bread text box ------------------------------------------- */
+
+  .txt3{
+    height: 191px;
+    width: 194px ;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25px;
+    right: 466px;
+    text-align: center;
+    box-shadow: 0px 20px 20px rgba(30, 113, 123, 0.15);
+  }
+  .txt3 h3{
+    font-size: 26px;
+    line-height: 27.5px;
+    color: #15256B;
+    padding: 31px 21px 10px 21px;
+    font-family: 'Fazer-headline';
+    letter-spacing: -0.02em;
+    
+  }
+  .txt3 p{
+    font-size: 13px;
+    line-height: 120%;
+    color: #000000;
+    padding: 5px 21px 13px 21px;
+    font-family: 'Fazer-text-light';
+    letter-spacing: -0.02em;
+
+    
+  }
+  .txt3 a{
+    font-size: 16px;
+    line-height: 105%;
+    color: #15256B;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Fazer-headline';
+    
+    
+  }
+  .footer{
+      text-align: center;
+      padding-bottom: 60px;
+      padding: 30px;
+      position: relative;
+     
+      
+  }
+  .footertxt {
+    font-size: 10px;
+    color: #1E717B;
+    
+
+  }
+  .footertxt a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #1E717B;
+    
+
+  }
+
+  .spriteBox{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: calc(28800px / 30);
+    height: 540px;
+    background: url(./Images/fire_spritesheet_v1.png);
+    z-index: 1000;
+    animation: animate 2.5s steps(30) ;
+  }
+
+  .preload {
+    display: none;
+  }
+
+  @keyframes animate {
+
+    from {
+      background-position: 0;
+
+    }
+    to {
+      background-position: -28800px;
+    }
+    
+  }
+
+  /* svg
+  {
+    display: inline-block;
+    fill:#15256B;
+    height: 7%;
+    position: absolute;
+  } */
+  #btnSVG{
+    display: inline-block;
+    fill:#ffffff;
+    position: absolute;
+    left: 145px;
+    height: 10%;
+  }
+  #btnSVG path{
+    
+    fill:#ffffff;
+    
+  }
+  #btn2SVG{
+    display: inline-block;
+    fill:#ffffff;
+    position: absolute;
+    left: 150px;
+    top: 27px;
+    height: 10%;
+  }
+  #btn2SVG path{
+    
+    fill:#ffffff;
+    
+  }
+
+  .txt1 svg{
+    height: 12px;
+  }
+  .txt3 svg{
+    height: 12px;
+  }
+  .txt5 svg{
+    height: 12px;
+  }
+  .coi-consent-banner{
+    left: 0;
+  }
+  
+  /* .video {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -36px;
+    left: -23px;
+    z-index: -55;
+  }
+  .video  video {
+    width: 360px;
+    height: 244px;
+  } */
+
+ 
